@@ -55,13 +55,22 @@
     </div>
 
     <main>
-        <div>
-            <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
-                <input type="email" name="email" id="signEmail" placeholder="Email">
-                <input type="text" name="name" id="signName" placeholder="Username">
-                <input type="password" name="password" id="signPassword" placeholder="Password"><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="form-container">
+            <form id="form" method="POST">
+                <div class="mb-3">
+                  <label for="firstNameInput" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstNameInput" required>
+                </div>
+                <div class="mb-3">
+                  <label for="lastNameInput" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastNameInput" required>
+                </div>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailInput" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
     </main>
 
