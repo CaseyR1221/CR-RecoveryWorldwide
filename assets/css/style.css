@@ -7,6 +7,10 @@ h6 {
   color: #0C6C89;
 }
 
+a {
+    color: #0C6C89 !important;
+}
+
 p {
     color: #0C6C89;
 }
@@ -32,8 +36,12 @@ form {
     color: #0C6C89;
 }
 
+.contact-button {
+    margin-left: 5rem;
+}
+
 .logo {
-    margin-left: 21rem;
+    margin: 0rem 10rem 0rem 25rem;
 }
 
 .hero-container {
