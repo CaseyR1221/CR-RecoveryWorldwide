@@ -1,3 +1,16 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0C6C89;
+}
+
+p {
+    color: #0C6C89;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -7,12 +20,16 @@ li {
     list-style-type: none;
 }
 
+label {
+    color: #0C6C89;
+}
+
 form {
     width: 75%;
 }
 
 .nav-link {
-    color: #4A7685;
+    color: #0C6C89;
 }
 
 .logo {
@@ -61,23 +78,32 @@ form {
 input[type=text], input[type=email] {
 	display:block;
     position: relative;
-	border-bottom: 1px solid #1076d0;
+	border-bottom: 1px solid #0C6C89;
     background-color: #F1F1F1;
     border-radius: 0%;
 	padding: 12px;
     margin-bottom: 15px;
     width: 100%;
     height: 2.5rem;
- 	/* box-sizing: border-box; */
     font-size: 17px;
     outline: none;
 }
 
 .divider {
-    border-bottom: 1px solid #1076d0;
+    border-bottom: 1px solid #0C6C89;
     width: 75%;
     margin: auto;
 }
+
+.button-container {
+    margin: auto;
+    width: 75%;
+}
+
+#footer-container {
+    width: 75%;
+}
+
 
 @media (max-width: 640px) {
     .logo {
