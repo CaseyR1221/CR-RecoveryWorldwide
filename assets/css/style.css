@@ -51,8 +51,11 @@ form {
 }
 
 .form-container {
+    min-height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 input[type=text], input[type=email] {
@@ -68,6 +71,12 @@ input[type=text], input[type=email] {
  	/* box-sizing: border-box; */
     font-size: 17px;
     outline: none;
+}
+
+.divider {
+    border-bottom: 1px solid #1076d0;
+    width: 75%;
+    margin: auto;
 }
 
 @media (max-width: 640px) {
