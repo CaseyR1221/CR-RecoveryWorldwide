@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>RW News-Letter</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="btn btn-outline-success" type="">
+            GET IN CONTACT
+          </button>
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo"  
+              src="./assets/images/logo.svg"
+              alt="Recovery Worldwide logo"
+              width="180"
+              height="50"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROPERTIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ADVERTISE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">NEWS-LETTER</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
+    <div class="hero-container">
+        <div class="hero"></div>
+        <h1 class="hero-title">Newsletter Sign-Up</h1>
+    </div>
 
     <main>
-
+        <div>
+            <form class="signup" name="signupForm" onsubmit="return validateSignupForm()" method="POST">
+                <input type="email" name="email" id="signEmail" placeholder="Email">
+                <input type="text" name="name" id="signName" placeholder="Username">
+                <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </main>
-    
+
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
