@@ -95,6 +95,10 @@ input[type=text], input[type=email] {
     margin: auto;
 }
 
+.thank-you {
+    line-height: 2rem;
+}
+
 .button-container {
     margin: auto;
     width: 75%;
